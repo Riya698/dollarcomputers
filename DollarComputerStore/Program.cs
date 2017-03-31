@@ -5,7 +5,9 @@ namespace DollarComputerStore
 {
   static class Program
   {
+    // Forms as properties
     public static StartForm StartForm { get; set; }
+    public static SelectForm SelectForm { get; set; }
 
     /// <summary>
     /// The main entry point for the application.
