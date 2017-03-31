@@ -58,6 +58,7 @@
       this.NewOrderButton.TabIndex = 2;
       this.NewOrderButton.Text = "Start a New Order";
       this.NewOrderButton.UseVisualStyleBackColor = true;
+      this.NewOrderButton.Click += new System.EventHandler(this.NewOrderButton_Click);
       // 
       // ExitAppButton
       // 
@@ -69,6 +70,7 @@
       this.ExitAppButton.TabIndex = 4;
       this.ExitAppButton.Text = "Exit";
       this.ExitAppButton.UseVisualStyleBackColor = true;
+      this.ExitAppButton.Click += new System.EventHandler(this.ExitAppButton_Click);
       // 
       // ExistingOrderButton
       // 
@@ -80,6 +82,7 @@
       this.ExistingOrderButton.TabIndex = 5;
       this.ExistingOrderButton.Text = "Open a Saved Order";
       this.ExistingOrderButton.UseVisualStyleBackColor = true;
+      this.ExistingOrderButton.Click += new System.EventHandler(this.ExistingOrderButton_Click);
       // 
       // LogoImage
       // 
