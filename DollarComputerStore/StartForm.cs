@@ -21,7 +21,7 @@ namespace DollarComputerStore
     /// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
     private void NewOrderButton_Click(object sender, System.EventArgs e)
     {
-      if (Program.SelectForm == null) Program.SelectForm = new SelectForm();
+      Program.SelectForm = Program.SelectForm ?? new SelectForm();
       Program.SelectForm.Show();
       Hide();
     }
@@ -33,10 +33,10 @@ namespace DollarComputerStore
     /// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
     private void ExistingOrderButton_Click(object sender, System.EventArgs e)
     {
+      Program.ProductInformationForm = Program.ProductInformationForm ?? new ProductInfoForm();
+      Program.ProductInformationForm.Show();
+      Program.ProductInformationForm.OpenProductFile();
       Hide();
-      ProductInformationForm form = Program.ProductInformationForm ?? new ProductInformationForm();
-      form.Show();
-      form.OpenProductFile();
     }
 
     /// <summary>

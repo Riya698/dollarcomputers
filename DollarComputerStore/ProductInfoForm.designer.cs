@@ -1,6 +1,6 @@
 ﻿namespace DollarComputerStore
 {
-  partial class ProductInformationForm
+  partial class ProductInfoForm
   {
     /// <summary>
     /// Required designer variable.

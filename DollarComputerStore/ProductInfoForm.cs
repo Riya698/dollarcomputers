@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace DollarComputerStore
 {
-  public partial class ProductInformationForm : Form
+  public partial class ProductInfoForm : Form
   {
     // Fields
     private products _product;
@@ -15,7 +15,7 @@ namespace DollarComputerStore
     /// <summary>
     /// Constructor
     /// </summary>
-    public ProductInformationForm()
+    public ProductInfoForm()
     {
       InitializeComponent();
       _product = new products();
@@ -109,8 +109,8 @@ namespace DollarComputerStore
     /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
     private void AnotherProductButton_Click(object sender, EventArgs e)
     {
-      SelectForm form = Program.SelectForm ?? new SelectForm();
-      form.Show();
+      Program.SelectForm = Program.SelectForm ?? new SelectForm();
+      Program.SelectForm.Show();
       Hide();
     }
 
@@ -147,6 +147,9 @@ namespace DollarComputerStore
     /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
     private void NextButton_Click(object sender, EventArgs e)
     {
+      Program.OrderForm = Program.OrderForm ?? new OrderForm();
+      Program.OrderForm.SetProduct(_product);
+      Program.OrderForm.Show();
       Hide();
     }
   }

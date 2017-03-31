@@ -8,7 +8,8 @@ namespace DollarComputerStore
     // Forms as properties
     public static StartForm StartForm { get; set; }
     public static SelectForm SelectForm { get; set; }
-    public static ProductInformationForm ProductInformationForm { get; set; }
+    public static ProductInfoForm ProductInformationForm { get; set; }
+    public static OrderForm OrderForm { get; set; }
 
     /// <summary>
     /// The main entry point for the application.
