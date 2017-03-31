@@ -34,6 +34,9 @@ namespace DollarComputerStore
     private void ExistingOrderButton_Click(object sender, System.EventArgs e)
     {
       Hide();
+      ProductInformationForm form = Program.ProductInformationForm ?? new ProductInformationForm();
+      form.Show();
+      form.OpenProductFile();
     }
 
     /// <summary>

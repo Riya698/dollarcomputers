@@ -58,6 +58,9 @@ namespace DollarComputerStore
     /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
     private void NextButton_Click(object sender, EventArgs e)
     {
+      ProductInformationForm form = Program.ProductInformationForm ?? new ProductInformationForm();
+      form.SetProduct(SelectedProduct);
+      form.Show();
       Hide();
     }
 

@@ -54,6 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProductInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductInformationForm.designer.cs">
+      <DependentUpon>ProductInformationForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="products.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,6 +82,9 @@
       <DependentUpon>StartForm.cs</DependentUpon>
     </Compile>
     <Compile Include="StoreModel.cs" />
+    <EmbeddedResource Include="ProductInformationForm.resx">
+      <DependentUpon>ProductInformationForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
