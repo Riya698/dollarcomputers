@@ -29,6 +29,7 @@
     private void InitializeComponent()
     {
       this.components = new System.ComponentModel.Container();
+      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductInfoForm));
       this.ProductInfoMenu = new System.Windows.Forms.MenuStrip();
       this.FileMenu = new System.Windows.Forms.ToolStripMenuItem();
       this.OpenMenu = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,6 +42,8 @@
       this.ConditionLabel = new System.Windows.Forms.Label();
       this.CostLabel = new System.Windows.Forms.Label();
       this.ProductInfoViewGroup = new System.Windows.Forms.GroupBox();
+      this.ModelTextLabel = new System.Windows.Forms.Label();
+      this.OSTextLabel = new System.Windows.Forms.Label();
       this.ManufacturerTextLabel = new System.Windows.Forms.Label();
       this.ModelLabel = new System.Windows.Forms.Label();
       this.OSLabel = new System.Windows.Forms.Label();
@@ -73,8 +76,6 @@
       this.SelectAnotherProductButton = new System.Windows.Forms.Button();
       this.ExitAppButton = new System.Windows.Forms.Button();
       this.NextButton = new System.Windows.Forms.Button();
-      this.OSTextLabel = new System.Windows.Forms.Label();
-      this.ModelTextLabel = new System.Windows.Forms.Label();
       this.ProductInfoMenu.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
       this.ProductInfoViewGroup.SuspendLayout();
@@ -106,21 +107,21 @@
       // OpenMenu
       // 
       this.OpenMenu.Name = "OpenMenu";
-      this.OpenMenu.Size = new System.Drawing.Size(152, 22);
+      this.OpenMenu.Size = new System.Drawing.Size(103, 22);
       this.OpenMenu.Text = "&Open";
       this.OpenMenu.Click += new System.EventHandler(this.OpenMenuItem_Click);
       // 
       // SaveMenu
       // 
       this.SaveMenu.Name = "SaveMenu";
-      this.SaveMenu.Size = new System.Drawing.Size(152, 22);
+      this.SaveMenu.Size = new System.Drawing.Size(103, 22);
       this.SaveMenu.Text = "&Save";
       this.SaveMenu.Click += new System.EventHandler(this.SaveMenuItem_Click);
       // 
       // CloseMenu
       // 
       this.CloseMenu.Name = "CloseMenu";
-      this.CloseMenu.Size = new System.Drawing.Size(152, 22);
+      this.CloseMenu.Size = new System.Drawing.Size(103, 22);
       this.CloseMenu.Text = "&Exit";
       this.CloseMenu.Click += new System.EventHandler(this.CloseButton_Click);
       // 
@@ -196,6 +197,28 @@
       this.ProductInfoViewGroup.TabIndex = 7;
       this.ProductInfoViewGroup.TabStop = false;
       this.ProductInfoViewGroup.Text = "Product Information";
+      // 
+      // ModelTextLabel
+      // 
+      this.ModelTextLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.ModelTextLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+      this.ModelTextLabel.Location = new System.Drawing.Point(0, 172);
+      this.ModelTextLabel.Name = "ModelTextLabel";
+      this.ModelTextLabel.Size = new System.Drawing.Size(96, 17);
+      this.ModelTextLabel.TabIndex = 16;
+      this.ModelTextLabel.Text = "Model";
+      this.ModelTextLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+      // 
+      // OSTextLabel
+      // 
+      this.OSTextLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.OSTextLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+      this.OSTextLabel.Location = new System.Drawing.Point(0, 128);
+      this.OSTextLabel.Name = "OSTextLabel";
+      this.OSTextLabel.Size = new System.Drawing.Size(96, 17);
+      this.OSTextLabel.TabIndex = 15;
+      this.OSTextLabel.Text = "OS";
+      this.OSTextLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
       // 
       // ManufacturerTextLabel
       // 
@@ -579,29 +602,7 @@
       this.NextButton.UseVisualStyleBackColor = true;
       this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
       // 
-      // OSTextLabel
-      // 
-      this.OSTextLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.OSTextLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-      this.OSTextLabel.Location = new System.Drawing.Point(0, 128);
-      this.OSTextLabel.Name = "OSTextLabel";
-      this.OSTextLabel.Size = new System.Drawing.Size(96, 17);
-      this.OSTextLabel.TabIndex = 15;
-      this.OSTextLabel.Text = "OS";
-      this.OSTextLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
-      // 
-      // ModelTextLabel
-      // 
-      this.ModelTextLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.ModelTextLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-      this.ModelTextLabel.Location = new System.Drawing.Point(0, 172);
-      this.ModelTextLabel.Name = "ModelTextLabel";
-      this.ModelTextLabel.Size = new System.Drawing.Size(96, 17);
-      this.ModelTextLabel.TabIndex = 16;
-      this.ModelTextLabel.Text = "Model";
-      this.ModelTextLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
-      // 
-      // ProductInformationForm
+      // ProductInfoForm
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -623,10 +624,11 @@
       this.Controls.Add(this.ProductInfoMenu);
       this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+      this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
       this.MainMenuStrip = this.ProductInfoMenu;
       this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
       this.MaximizeBox = false;
-      this.Name = "ProductInformationForm";
+      this.Name = "ProductInfoForm";
       this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
       this.Text = "Product Information";
       this.ProductInfoMenu.ResumeLayout(false);

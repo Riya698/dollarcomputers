@@ -33,6 +33,7 @@
       this.OrderFormMenu = new System.Windows.Forms.MenuStrip();
       this.FileMenu = new System.Windows.Forms.ToolStripMenuItem();
       this.PrintMenu = new System.Windows.Forms.ToolStripMenuItem();
+      this.SepMenu = new System.Windows.Forms.ToolStripSeparator();
       this.ExitMenu = new System.Windows.Forms.ToolStripMenuItem();
       this.EditMenu = new System.Windows.Forms.ToolStripMenuItem();
       this.BackMenu = new System.Windows.Forms.ToolStripMenuItem();
@@ -81,7 +82,6 @@
       this.CloseButton = new System.Windows.Forms.Button();
       this.BackButton = new System.Windows.Forms.Button();
       this.ProductPicture = new System.Windows.Forms.PictureBox();
-      this.SepMenu = new System.Windows.Forms.ToolStripSeparator();
       this.label1 = new System.Windows.Forms.Label();
       this.OrderFormMenu.SuspendLayout();
       this.groupBox1.SuspendLayout();
@@ -117,14 +117,19 @@
       // PrintMenu
       // 
       this.PrintMenu.Name = "PrintMenu";
-      this.PrintMenu.Size = new System.Drawing.Size(152, 22);
+      this.PrintMenu.Size = new System.Drawing.Size(102, 22);
       this.PrintMenu.Text = "&Print";
       this.PrintMenu.Click += new System.EventHandler(this.PrintMenuItem_Click);
+      // 
+      // SepMenu
+      // 
+      this.SepMenu.Name = "SepMenu";
+      this.SepMenu.Size = new System.Drawing.Size(99, 6);
       // 
       // ExitMenu
       // 
       this.ExitMenu.Name = "ExitMenu";
-      this.ExitMenu.Size = new System.Drawing.Size(152, 22);
+      this.ExitMenu.Size = new System.Drawing.Size(102, 22);
       this.ExitMenu.Text = "E&xit";
       this.ExitMenu.Click += new System.EventHandler(this.CloseButton_Click);
       // 
@@ -139,7 +144,7 @@
       // BackMenu
       // 
       this.BackMenu.Name = "BackMenu";
-      this.BackMenu.Size = new System.Drawing.Size(152, 22);
+      this.BackMenu.Size = new System.Drawing.Size(102, 22);
       this.BackMenu.Text = "&Back";
       this.BackMenu.Click += new System.EventHandler(this.Back_Click);
       // 
@@ -154,7 +159,7 @@
       // AboutMenu
       // 
       this.AboutMenu.Name = "AboutMenu";
-      this.AboutMenu.Size = new System.Drawing.Size(152, 22);
+      this.AboutMenu.Size = new System.Drawing.Size(111, 22);
       this.AboutMenu.Text = "&About";
       this.AboutMenu.Click += new System.EventHandler(this.AboutMenuItem_Click);
       // 
@@ -643,11 +648,6 @@
       this.ProductPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
       this.ProductPicture.TabIndex = 6;
       this.ProductPicture.TabStop = false;
-      // 
-      // SepMenu
-      // 
-      this.SepMenu.Name = "SepMenu";
-      this.SepMenu.Size = new System.Drawing.Size(149, 6);
       // 
       // label1
       // 
