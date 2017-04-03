@@ -11,8 +11,11 @@ namespace DollarComputerStore
     public static ProductInfoForm ProductInformationForm { get; set; }
     public static OrderForm OrderForm { get; set; }
 
-    /// <summary>
-    /// The main entry point for the application.
+     /// <summary>
+     /// Program: Dollar Computers
+    /// Name: Riya Patel
+   /// StudentID: 200335493
+   /// App Creation Date: April 02, 2017
     /// </summary>
     [STAThread]
     static void Main()
